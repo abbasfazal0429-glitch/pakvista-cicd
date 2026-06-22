@@ -1,0 +1,10 @@
+{
+  "doctype-first": true,
+  "title-require": true,
+  "attr-lowercase": true,
+  "tagname-lowercase": true,
+  "alt-require": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "href-abs-or-rel": false
+}

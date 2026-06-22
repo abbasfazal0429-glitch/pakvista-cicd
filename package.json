@@ -1,0 +1,20 @@
+{
+  "name": "pakvista-cicd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PakVista static tourism website for a multi-environment CI/CD DevOps project.",
+  "scripts": {
+    "lint:html": "htmlhint \"*.html\"",
+    "lint:css": "stylelint \"style.css\"",
+    "build": "parcel build \"*.html\" --dist-dir dist --public-url ./",
+    "check": "npm run lint:html && npm run lint:css && npm run build"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
+    "htmlhint": "^1.6.3",
+    "parcel": "^2.15.4",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
